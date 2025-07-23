@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Sphere</title>
+    <link rel="stylesheet" href="/css/style.css" >
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="header">
+            <nav>
+                <img src="/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="login-page.html">Login</a></li>
+                    <li><a href="sign-up-page.html">SignUp</a></li>
+                    <img src="/website/images/x-mark.png" class="fa-solid" onclick="closemenu()">
+                </ul>
+                <div class="fa-solid2">
+                    <img src="/images/bars.png" class="fa-solid" onclick="openmenu()">
+                </div>
+            </nav>
+            </div>
+            <div class="header-text">
+                <h1><b>Welcome To, Shop<span>Sphere!</span></b></h1>
+                <p>We are thrilled to have you here! </p>
+            </div>
+            <a href="sign-up-page.html" class="btn">Get Started</a>
+        </div>
+    </div>
+<script>
+    let sidemenu = document.getElementById("sidemenu");
+    let menu = document.querySelector('.fa-solid2');
+
+    function openmenu(){
+    sidemenu.style.right = '0';
+    menu.style.display = 'none';
+}
+function closemenu(){
+    sidemenu.style.right = '-200px';
+    menu.style.display = 'block';
+}
+</script>
+</body>
+</html> 
+<!-- color code for brown 5f3106-->
+<!--color code for cream fffdd0-->
